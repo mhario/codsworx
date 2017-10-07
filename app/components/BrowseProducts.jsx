@@ -24,15 +24,11 @@ export const BrowseProducts = (props) => {
 
   return (
     <div className="row">
-      <div>
-      </div>
       {
         viewProducts &&
         viewProducts.map(product => {
           return (
-            <div className="col-md-4 col-xs-12" key={product.id}>
-              <ProductCardView key={product.id} product={product} addToCart={props.addToCart}/>
-            </div>
+            <ProductCardView key={product.id} product={product} addToCart={props.addToCart}/>
           );
         })
       }
