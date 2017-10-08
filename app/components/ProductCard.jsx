@@ -5,7 +5,7 @@ import { priceString } from 'APP/app/utils';
 export const ProductCardView = (props) => {
   return (
     <div key={props.product.id} className="col-md-6 col-xs-12">
-      <div className="clearfix product-card">
+      <div className="clearfix product-card floaty-bit">
         <Link to={'/products/' + props.product.id}>
           <div className="col-xs-6 image-col">
             <span className="image-helper"></span>
@@ -21,7 +21,7 @@ export const ProductCardView = (props) => {
           <p>${ priceString(props.product.price) }</p>
           {
             (props.product.inventory > 0)
-            ? <button className="btn btn-primary"
+            ? <button className="btn btn-primary floaty-bit"
                 onClick={() => { props.addToCart(props.product.id); } }>
                   Add to Cart
               </button>

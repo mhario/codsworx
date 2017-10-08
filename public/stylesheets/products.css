@@ -6,6 +6,15 @@
 .products-column {
   height: 100%; }
 
+@keyframes floatup {
+	0% {  box-shadow: 0px 1px 1px 0px black; }
+	100% { box-shadow: 0px 3px 7px -1px black; }
+}
+@keyframes floatdown {
+	0% { box-shadow: 0px 3px 7px -1px black; }
+	100% {  box-shadow: 0px 1px 1px 0px black; }
+}
+
 .product-card {
   border-color: white;
   border-radius: 1px;
@@ -15,6 +24,14 @@
   text-align: center;
 	height: 320px;
   }
+.floaty-bit:hover {
+	box-shadow: 0px 3px 7px -1px black;
+	transition: box-shadow 0.1s linear;
+}
+.floaty-bit:not(:hover) {
+	box-shadow: 0px 1px 1px 0px black;
+	transition: box-shadow 0.1s linear;
+}
 	.image-col {
 		height: 100%;
 		padding: 0;
