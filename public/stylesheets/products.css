@@ -18,6 +18,7 @@
 	.image-col {
 		height: 100%;
 		padding: 0;
+		text-align: left;
 	}
   .product-card img {
 		margin: auto;
@@ -30,7 +31,9 @@
 		vertical-align: middle;
 	}
   .product-card h1 {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+		font-size: 28px;
+	}
 
 .weak {
   font-weight: lighter; }
