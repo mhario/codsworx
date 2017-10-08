@@ -13,15 +13,15 @@
   background-color: #ffffff;
   margin-top: 25px;
   text-align: center;
-	height: 350px;
+	height: 320px;
   }
 	.image-col {
 		height: 100%;
-		padding-left: 0;
+		padding: 0;
 	}
   .product-card img {
 		margin: auto;
-		max-height: 330px;
+		max-height: 310px;
 	}
 	.image-helper {
 		display: inline-block;
