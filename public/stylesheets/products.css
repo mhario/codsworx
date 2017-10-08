@@ -22,6 +22,7 @@
   .product-card img {
 		margin: auto;
 		max-height: 310px;
+		max-width: 222px;
 	}
 	.image-helper {
 		display: inline-block;
